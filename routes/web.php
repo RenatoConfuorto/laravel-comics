@@ -13,15 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+$comics = collect(config('comics'));
+
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/comics', function () {
-    $comics = config('comics');
+Route::get('/comics', function () use ($comics){
     $data = [
         'comics' => $comics
     ];
     // dd($data);
     return view('comics', $data);
 })->name('comics');
+
+Route::get('comic-page/{id}', function($id) use ($comics){
+    $comic = $comics->where('id', $id)->first();
+    $artists = collect($comic['artists'])->implode(', ');
+    $writers = collect($comic['writers'])->implode(', ');
+    // dd($artists);
+    $data = [
+        'comic' => $comic,
+    ];
+    return view('comic-page', $comic);
+})->name('comic-page');

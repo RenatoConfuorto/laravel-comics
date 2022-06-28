@@ -19,7 +19,7 @@
                 <img src="{{ $comic['thumb'] }}" alt="">
               </div>
   
-              <a href="#">{{ $comic['series'] }}</a>
+              <a href="{{ route('comic-page', ['id' => $comic['id']]) }}">{{ $comic['series'] }}</a>
             </div>
         @endforeach
       </div>
