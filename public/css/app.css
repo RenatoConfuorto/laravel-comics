@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  height: 100%;
+  width: 3rem;
+}
+
+nav .navbar-list {
+  padding: 20px;
+  display: flex;
+}
+
+nav .navbar-list li {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+nav .navbar-list li a {
+  text-decoration: none;
+}
+
