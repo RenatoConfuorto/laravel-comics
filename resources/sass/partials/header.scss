@@ -28,6 +28,10 @@ nav{
       font-weight: 500;
       line-height: $header-height;
 
+      a{
+        color: $primary-color;
+      }
+
       &.active{
         border-bottom: 3px solid $brand-primary-color;
 

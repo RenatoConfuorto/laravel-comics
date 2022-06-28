@@ -5,23 +5,23 @@
 @endsection
 
 @section('main-content')
-    <div class="label">
-      current series
-    </div>
-
     <div class="container">
 
       <div class="comics-list">
-  
-        @foreach ($comics as $comic)
-            <div class="comic-card">
-              <div class="cover">
-                <img src="{{ $comic['thumb'] }}" alt="">
-              </div>
-  
-              <a href="{{ route('comic-page', ['id' => $comic['id']]) }}">{{ $comic['series'] }}</a>
-            </div>
-        @endforeach
-      </div>
+        
+          <div class="label">
+              current series
+          </div>
+
+            @foreach ($comics as $comic)
+                <div class="comic-card">
+                    <div class="cover">
+                        <img src="{{ $comic['thumb'] }}" alt="">
+                    </div>
+
+                    <a href="{{ route('comic-page', ['id' => $comic['id']]) }}">{{ $comic['series'] }}</a>
+                </div>
+            @endforeach
+        </div>
     </div>
 @endsection
