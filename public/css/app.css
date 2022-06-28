@@ -14,11 +14,20 @@ img {
 
 a {
   text-decoration: none;
+  color: #1c1c1c;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.jumbotron {
+  height: 20rem;
+  background-image: url("/images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
 .label {
@@ -42,29 +51,48 @@ a {
 }
 
 .comics-list .comic-card a {
-  color: black;
+  color: #1c1c1c;
 }
 
 nav {
-  height: 3rem;
+  height: 5rem;
+  background-color: white;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 nav .logo {
+  height: 75%;
+}
+
+nav .logo img {
   height: 100%;
-  width: 3rem;
+  width: auto;
 }
 
 nav .navbar-list {
   padding: 20px;
-  display: flex;
+  height: 100%;
 }
 
 nav .navbar-list li {
-  margin: 0 10px;
+  height: 5rem;
+  margin: 0 0.5rem;
+  display: inline-block;
   text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 5rem;
+}
+
+nav .navbar-list li.active {
+  border-bottom: 3px solid #0c7cec;
+}
+
+nav .navbar-list li.active a {
+  color: #0c7cec;
 }
 
 .footer-top {

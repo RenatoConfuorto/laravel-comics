@@ -14,9 +14,18 @@ img{
 
 a{
   text-decoration: none;
+  color: $primary-color;
 }
 
 .container{
   width: 80%;
   margin: 0 auto;
+}
+
+.jumbotron{
+  height: $jumbotron-height;
+  background-image: url('/images/jumbotron.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }

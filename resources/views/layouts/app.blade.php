@@ -15,6 +15,7 @@
   </header>
 
   <main>
+    <section class="jumbotron"></section>
     @yield('main-content')
   </main>
 

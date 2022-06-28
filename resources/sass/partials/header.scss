@@ -1,21 +1,40 @@
 nav{
   height: $header-height;
+  background-color: white;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .logo{
-    height: 100%;
-    width: $header-height;
+    height: 75%;
+    
+    img{
+      height: 100%;
+      width: auto;
+    }
   }
 
   .navbar-list{
     padding: 20px;
-    display: flex;
+    height: 100%;
   
     li{
-      margin: 0 10px;
+      height: $header-height;
+      margin: 0 0.5rem;
+      display: inline-block;
       text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: $header-height;
+
+      &.active{
+        border-bottom: 3px solid $brand-primary-color;
+
+        a{
+          color: $brand-primary-color;
+        }
+      }
     }
   }
 }

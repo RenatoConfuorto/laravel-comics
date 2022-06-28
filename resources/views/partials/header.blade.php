@@ -9,7 +9,7 @@
           <a href="#">characters</a>
         </li>
   
-        <li>
+        <li class="active">
           <a href="{{ route('comics') }}">comics</a>
         </li>
   
@@ -48,7 +48,7 @@
       </ul>
     </div>
 
-    <div class="search-bar">
+    {{-- <div class="search-bar">
       Search
-    </div>
+    </div> --}}
   </nav>
