@@ -5,5 +5,5 @@
 @endsection
 
 @section('main-content')
-    Main
+    Home
 @endsection

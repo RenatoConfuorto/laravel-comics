@@ -10,7 +10,7 @@
         </li>
   
         <li>
-          <a href="#">comics</a>
+          <a href="{{ route('comics') }}">comics</a>
         </li>
   
         <li>

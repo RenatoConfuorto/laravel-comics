@@ -16,6 +16,35 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+.comics-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comics-list .comic-card {
+  flex-basis: 16.6666666667%;
+  padding: 0 10px;
+}
+
+.comics-list .comic-card .cover {
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.comics-list .comic-card a {
+  color: black;
+}
+
 nav {
   height: 3rem;
   display: flex;
