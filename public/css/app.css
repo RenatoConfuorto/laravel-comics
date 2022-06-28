@@ -12,6 +12,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   height: 3rem;
   display: flex;
@@ -34,7 +38,41 @@ nav .navbar-list li {
   text-transform: uppercase;
 }
 
-nav .navbar-list li a {
-  text-decoration: none;
+.footer-top {
+  margin-bottom: 1rem;
+}
+
+.footer-top .footer-list-wrapper {
+  display: flex;
+}
+
+.footer-top .footer-list-wrapper .footer-col {
+  margin: 0 20px;
+}
+
+.footer-top .footer-list-wrapper .footer-col .footer-list h3 {
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom .socials {
+  display: flex;
+}
+
+.footer-bottom .socials h3 {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.footer-bottom .socials ul {
+  display: flex;
+}
+
+.footer-bottom .socials ul li {
+  margin-right: 10px;
 }
 
