@@ -1,0 +1,132 @@
+.stripe{
+  height: 5rem;
+  background-color: $brand-primary-color;
+}
+
+.comic-container{
+  padding-top: 8rem;
+  width: 100%;
+  background-color: white;
+  color: $primary-color;
+
+  .container{
+    position: relative;
+
+    .comic-cover{
+      width: 200px;
+      position: absolute;
+      top: -28rem;
+
+      span{
+        text-transform: uppercase;
+        color: white;
+        background-color: $brand-primary-color-light;
+        position: absolute;
+
+        &:first-child{
+          top: 0;
+          left: 0;
+        }
+
+        &:last-child{
+          bottom: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+      }
+    }
+
+    .comic-description{
+      width: 60%;
+      margin-bottom: 50px;
+
+      h2{
+        font-size: 2.5rem;
+        color: $brand-primary-color-dark;
+        margin-bottom: 40px;
+      }
+
+      .price-section{
+        background-color: #55ba59;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.4rem;
+
+        h3{
+          padding: 25px 33px 20px;
+        }
+
+        .available{
+          display: flex;
+
+          &>*{
+            padding: 25px 33px 20px;
+          }
+
+          & p:first-child{
+            text-transform: uppercase;
+          }
+
+          & p:last-child{
+            border-left: 1px solid $primary-color;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .description{
+
+        line-height: 1.5;
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        color: $primary-color;
+      }
+    }
+
+  }
+
+  .comic-details{
+    background-color: #f6f6f6;
+    padding-bottom: 5rem;
+
+    .container{
+      display: flex;
+
+      .col{
+        flex-basis: calc(50% - 40px);
+        margin: 0 20px;
+
+        h3{
+          color: $brand-primary-color-dark;
+          text-transform: capitalize;
+          font-size: 2rem;
+          padding: 25px 10px;
+          border-bottom: 2px solid #e3e3e3;
+        }
+
+        &-section{
+          display: flex;
+          border-bottom: 1px solid #e3e3e3;
+          font-size: 1.2rem;
+          padding: 20px 10px;
+
+          h4{
+            width: 40%;
+            color: $brand-primary-color-dark;
+          }
+
+          &-content{
+
+            &.light{
+              color: $brand-primary-color-light;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

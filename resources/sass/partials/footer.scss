@@ -1,42 +1,172 @@
-.footer-top{
-  margin-bottom: 1rem; //
-
-  .footer-list-wrapper{
-
+.icons-container{
+  width: 100%;
+  height: $app-icons-height;
+  background-color: $brand-primary-color;
+  ul{
+    height: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .footer-col{
+    li{
+      height: 35%;
+      margin: 0 1rem;
 
-      margin: 0 20px;
+      a{
+        color: white;
 
-      .footer-list{
-
-        h3{
-          text-transform: uppercase;
+        img{
+          height: 100%;
+          width: auto;
+          vertical-align: middle;
+          margin-right: 10px;
         }
 
+        span{
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          vertical-align: middle;
+        }
       }
     }
   }
 }
 
-.footer-bottom{
-  display: flex;
-  justify-content: space-between;
+.footer{
+  background-image: url('../images/footer-bg.jpg');
+  
+  .container{
+    padding: 2rem 0 1rem;
+    background-image: url('../images/dc-logo-bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
 
-  .socials{
-    display: flex;
-
-    h3{
-      text-transform: uppercase;
-      margin-right: 10px;
-    }
-
-    ul{
+    .footer-list{
+      width: 50%;
+      height: 100%;
       display: flex;
-      li{
 
+      .col-3{
+        flex-basis: calc(100% / 3);
+        color: white;
+
+        h3{
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+
+        ul{
+          margin-bottom: 1rem;
+
+          li{
+            margin-bottom: 5px;
+            font-size: 0.8rem;
+            a{
+              color: #8e8e90;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-action{
+  background-color: $primary-color;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 1.5rem 0;
+
+    .sign-up-section{
+      a{
+        padding: 0.3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid $brand-primary-color;
+        color: white;
+      }
+    }
+    
+    .socials{
+      display: flex;
+      align-items: center;
+
+      h3{
+        text-transform: uppercase;
+        color: $brand-primary-color;
+        font-size: 1rem;
         margin-right: 10px;
+      }
+
+      ul{
+        li{
+          width: 1.5rem;
+          height: auto;
+          margin-right: 10px;
+          display: inline-block;
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (min-width: 1440px) {
+  .footer{
+    
+    .container{
+
+      .footer-list{
+        width: 65%;
+
+        .col-3{
+
+
+          h3{
+            font-size: 2rem;
+          }
+
+          ul{
+
+            li{
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-action{
+
+    .container{
+
+      .sign-up-section{
+        font-size: 1.6rem;
+      }
+
+      .socials{
+
+        h3{
+          font-size: 1.6rem;
+        }
+
+        ul{
+
+          li{
+
+            width: 1.8rem;
+          }
+        }
       }
     }
   }

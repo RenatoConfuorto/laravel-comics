@@ -50,13 +50,11 @@ a {
   flex-wrap: wrap;
   padding: 3rem 0;
 }
-
 .comics-list .comic-card {
   padding: 0 5px;
   flex-basis: 16.6666666667%;
   margin-bottom: 10px;
 }
-
 .comics-list .comic-card .cover {
   width: 100%;
   height: 0;
@@ -67,13 +65,118 @@ a {
      object-position: top;
   overflow: hidden;
 }
-
 .comics-list .comic-card a {
   display: inline-block;
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
   margin-top: 10px;
+}
+
+.stripe {
+  height: 5rem;
+  background-color: #0c7cec;
+}
+
+.comic-container {
+  padding-top: 8rem;
+  width: 100%;
+  background-color: white;
+  color: #303030;
+}
+.comic-container .container {
+  position: relative;
+}
+.comic-container .container .comic-cover {
+  width: 200px;
+  position: absolute;
+  top: -28rem;
+}
+.comic-container .container .comic-cover span {
+  text-transform: uppercase;
+  color: white;
+  background-color: #00a9d9;
+  position: absolute;
+}
+.comic-container .container .comic-cover span:first-child {
+  top: 0;
+  left: 0;
+}
+.comic-container .container .comic-cover span:last-child {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.comic-container .container .comic-description {
+  width: 60%;
+  margin-bottom: 50px;
+}
+.comic-container .container .comic-description h2 {
+  font-size: 2.5rem;
+  color: #003f5e;
+  margin-bottom: 40px;
+}
+.comic-container .container .comic-description .price-section {
+  background-color: #55ba59;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.comic-container .container .comic-description .price-section h3 {
+  padding: 25px 33px 20px;
+}
+.comic-container .container .comic-description .price-section .available {
+  display: flex;
+}
+.comic-container .container .comic-description .price-section .available > * {
+  padding: 25px 33px 20px;
+}
+.comic-container .container .comic-description .price-section .available p:first-child {
+  text-transform: uppercase;
+}
+.comic-container .container .comic-description .price-section .available p:last-child {
+  border-left: 1px solid #303030;
+  text-transform: capitalize;
+}
+.comic-container .container .comic-description .description {
+  line-height: 1.5;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  color: #303030;
+}
+.comic-container .comic-details {
+  background-color: #f6f6f6;
+  padding-bottom: 5rem;
+}
+.comic-container .comic-details .container {
+  display: flex;
+}
+.comic-container .comic-details .container .col {
+  flex-basis: calc(50% - 40px);
+  margin: 0 20px;
+}
+.comic-container .comic-details .container .col h3 {
+  color: #003f5e;
+  text-transform: capitalize;
+  font-size: 2rem;
+  padding: 25px 10px;
+  border-bottom: 2px solid #e3e3e3;
+}
+.comic-container .comic-details .container .col-section {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 1.2rem;
+  padding: 20px 10px;
+}
+.comic-container .comic-details .container .col-section h4 {
+  width: 40%;
+  color: #003f5e;
+}
+.comic-container .comic-details .container .col-section-content.light {
+  color: #00a9d9;
 }
 
 nav {
@@ -84,21 +187,17 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 nav .logo {
   height: 75%;
 }
-
 nav .logo img {
   height: 100%;
   width: auto;
 }
-
 nav .navbar-list {
   padding: 20px;
   height: 100%;
 }
-
 nav .navbar-list li {
   height: 5rem;
   margin: 0 0.5rem;
@@ -108,54 +207,133 @@ nav .navbar-list li {
   font-weight: 500;
   line-height: 5rem;
 }
-
 nav .navbar-list li a {
   color: #303030;
 }
-
 nav .navbar-list li.active {
   border-bottom: 3px solid #0c7cec;
 }
-
 nav .navbar-list li.active a {
   color: #0c7cec;
 }
 
-.footer-top {
+.icons-container {
+  width: 100%;
+  height: 8rem;
+  background-color: #0c7cec;
+}
+.icons-container ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-container ul li {
+  height: 35%;
+  margin: 0 1rem;
+}
+.icons-container ul li a {
+  color: white;
+}
+.icons-container ul li a img {
+  height: 100%;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.icons-container ul li a span {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.footer {
+  background-image: url("../images/footer-bg.jpg");
+}
+.footer .container {
+  padding: 2rem 0 1rem;
+  background-image: url("../images/dc-logo-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+}
+.footer .container .footer-list {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.footer .container .footer-list .col-3 {
+  flex-basis: 33.3333333333%;
+  color: white;
+}
+.footer .container .footer-list .col-3 h3 {
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
-.footer-top .footer-list-wrapper {
-  display: flex;
+.footer .container .footer-list .col-3 ul {
+  margin-bottom: 1rem;
+}
+.footer .container .footer-list .col-3 ul li {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+.footer .container .footer-list .col-3 ul li a {
+  color: #8e8e90;
 }
 
-.footer-top .footer-list-wrapper .footer-col {
-  margin: 0 20px;
+.footer-action {
+  background-color: #303030;
 }
-
-.footer-top .footer-list-wrapper .footer-col .footer-list h3 {
-  text-transform: uppercase;
-}
-
-.footer-bottom {
+.footer-action .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
 }
-
-.footer-bottom .socials {
-  display: flex;
-}
-
-.footer-bottom .socials h3 {
+.footer-action .container .sign-up-section a {
+  padding: 0.3rem;
+  text-decoration: none;
   text-transform: uppercase;
-  margin-right: 10px;
+  border: 2px solid #0c7cec;
+  color: white;
 }
-
-.footer-bottom .socials ul {
+.footer-action .container .socials {
   display: flex;
+  align-items: center;
 }
-
-.footer-bottom .socials ul li {
+.footer-action .container .socials h3 {
+  text-transform: uppercase;
+  color: #0c7cec;
+  font-size: 1rem;
   margin-right: 10px;
 }
+.footer-action .container .socials ul li {
+  width: 1.5rem;
+  height: auto;
+  margin-right: 10px;
+  display: inline-block;
+}
+.footer-action .container .socials ul li img {
+  width: 100%;
+}
 
+@media screen and (min-width: 1440px) {
+  .footer .container .footer-list {
+    width: 65%;
+  }
+  .footer .container .footer-list .col-3 h3 {
+    font-size: 2rem;
+  }
+  .footer .container .footer-list .col-3 ul li {
+    font-size: 1rem;
+  }
+  .footer-action .container .sign-up-section {
+    font-size: 1.6rem;
+  }
+  .footer-action .container .socials h3 {
+    font-size: 1.6rem;
+  }
+  .footer-action .container .socials ul li {
+    width: 1.8rem;
+  }
+}
